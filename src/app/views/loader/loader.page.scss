@@ -1,0 +1,42 @@
+main,
+.content,
+.title-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    justify-content: center;
+    height: 100vh;
+    background: #f5f5fa;
+    position: relative;
+    padding: 1rem;
+}
+
+.content {
+    .title-group {
+        row-gap: 1rem;
+        padding: 1rem;
+
+        span {
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .subheading {
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .continue__btn {
+        position: absolute;
+        bottom: 6rem;
+    }
+}

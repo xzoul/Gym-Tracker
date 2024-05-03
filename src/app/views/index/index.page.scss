@@ -1,0 +1,121 @@
+main,
+.content,
+.daily_summary__card,
+.card__header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main,
+.content,
+.daily_summary__card {
+    align-items: center;
+}
+
+main {
+    background-color: #f5f5fa;
+}
+
+.daily_summary__card {
+    background-color: white;
+    padding: 1rem;
+    padding-top: 4rem;
+    border-bottom: 1px solid #cfcfd2;
+}
+
+.card__header {
+    .card__subtitle {
+        font-size: 14px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.card__title,
+.card__item__time {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    column-gap: 2rem;
+
+    .card__items {
+        row-gap: 1rem;
+
+        .card__item {
+            .card__item__name,
+            .card__item__timelabel {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            .card__item__timelabel {
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    .card__aside {
+        display: flex;
+        width: 100%;
+        margin-block: 0.5rem;
+        // padding: 1rem;
+
+        .card__figure {
+            display: flex;
+            width: 100%;
+
+            .card__chart {
+                display: flex;
+                width: 100%;
+                // border: 1px solid;
+                border-radius: 100%;
+            }
+
+            .outer {
+                position: relative;
+                .regular {
+                    margin: 2rem;
+                    .inner {
+                        margin: 2rem;
+                        .center {
+                            background-color: black;
+                            margin: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.card__items,
+.card__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.fire {
+    color: #e12d11;
+}
+.earth {
+    color: #38db03;
+}
+.water {
+    color: #01b9e1;
+}
+
+.fire__bg {
+    background-color: #e12d11;
+}
+.earth__bg {
+    background-color: #38db03;
+}
+.water__bg {
+    background-color: #01b9e1;
+}
